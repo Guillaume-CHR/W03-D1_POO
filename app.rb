@@ -1,14 +1,13 @@
 #! /usr/bin/env ruby
 ##****************************************************************************
-# RUBY - Main Procedure
+# RUBY - Main Procedure 
 #****************************************************************************
 #   Ruby's Program - Main Application
 #   Written by: Guillaume CHRISTE
 # 	Date: 21-Jan-2019
 #   
 #   Description:
-# 		- 
-# 		- 
+# 		- Create an event using class User & Event
 # 		
 # 	Gems:
   		require 'rubygems'
@@ -36,6 +35,6 @@ puts jean
 
 e = Event.new("2019-01-13 09:00", 10, "standup quotidien", [julie, jean])
 puts "Voici l'email du premier attendee de l'événement : #{e.tbl_attendees.first.email}"
-# End of Program's name
+# End of Main Application ....................................................
 #.............................................................................
 #.............................................................................

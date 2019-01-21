@@ -7,7 +7,7 @@
 # 	Date: 21-Jan-2019
 #   
 #   Description:
-# 		- 
+# 		- Create an event of class Event
 # 		- 
 # 		
 # 	Gems:
@@ -25,10 +25,10 @@ class Event
   attr_accessor :start_date, :length, :title, :tbl_attendees
   
   def initialize(start_date, length, title, tbl_attendees)
-	@title = title
-	@start_date = Time.parse(start_date)
-	@length = length.to_i
-	@tbl_attendees = tbl_attendees
+  	@title = title
+  	@start_date = Time.parse(start_date)
+  	@length = length.to_i
+  	@tbl_attendees = tbl_attendees
   end
   
   def show_itself
@@ -67,6 +67,6 @@ class Event
   end
 end
 
-# End of Program's name
+# End of Event ...............................................................
 #.............................................................................
 #.............................................................................

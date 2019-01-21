@@ -1,13 +1,13 @@
 #! /usr/bin/env ruby
 ##****************************************************************************
-# RUBY - @NameOfTheProgram
+# RUBY - Class User
 #****************************************************************************
-#   Ruby's Program - Name of the program
+#   Ruby's Program - User
 #   Written by: Guillaume CHRISTE
 # 	Date: 21-Jan-2019
 #   
 #   Description:
-# 		- 
+# 		- Create an object with class = User
 # 		- 
 # 		
 # 	Gems:
@@ -44,6 +44,6 @@ class User
   end
 
 end
-# End of Program's name
+# End of User ................................................................
 #.............................................................................
 #.............................................................................
