@@ -22,7 +22,6 @@
 # event.rb
 # user.rb
 require './lib/event.rb'
-
 require './lib/user'
 
 User.new("julie@julie.com")

@@ -25,8 +25,8 @@ class User
   @@tbl_user = []
   
   def initialize(email)
-	@email = email
-	@@tbl_user << self
+  	@email = email
+  	@@tbl_user << self
   end
   
   def show_itself
@@ -34,7 +34,7 @@ class User
   end
   
   def self.all
-	@@tbl_user.count
+	 @@tbl_user.count
   end
 
   def self.find_by_email(email)
