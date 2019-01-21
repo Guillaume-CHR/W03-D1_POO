@@ -24,6 +24,7 @@
 class Event
   attr_accessor :start_date, :length, :title, :tbl_attendees
   
+  
   def initialize(start_date, length, title, tbl_attendees)
   	@title = title
   	@start_date = Time.parse(start_date)
