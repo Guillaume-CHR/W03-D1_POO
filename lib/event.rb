@@ -26,12 +26,7 @@ class Event
   
   def initialize(start_date, length, title, tbl_attendees)
 	@title = title
-	if Time.parse(start_date) >= Time.now
-	  @start_date = Time.parse(start_date)
-	  puts "Date recorded"
-	else
-	  puts "The date entered is in the past. Please select a new one"
-	end
+	@start_date = Time.parse(start_date)
 	@length = length.to_i
 	@tbl_attendees = tbl_attendees
   end
@@ -45,11 +40,11 @@ class Event
   end
 
   def end_date
-  	@start_date + @length.to_i * 60
+  	 return @start_date + (@length.to_i * 60)
   end
 
   def is_past
-  	(Time.now < @start_date) ? true : false
+  	(Time.now > @start_date) ? true : false
   end
 
   def is_future
@@ -57,7 +52,7 @@ class Event
   end
 
   def is_soon
-  	if start_date < Time.now + 30 * 60 && start_date > Time.now 
+  	if (@start_date < Time.now + 30 * 60) && @start_date > Time.now 
   		true
   	else
   		false
@@ -65,10 +60,10 @@ class Event
   end
 
   def to_s
-	puts "Title: #{@title}"
-	puts "Starting date: #{@start_date}"
-	puts "Length: #{@length} minutes"
-	puts "Invitees: #{@tbl_attendees.join(', ')}"
+  	puts "Title: #{@title}"
+  	puts "Starting date: #{@start_date}"
+  	puts "Length: #{@length} minutes"
+  	puts "Invitees: #{@tbl_attendees.join(', ')}"
   end
 end
 

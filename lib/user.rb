@@ -26,7 +26,7 @@ class User
   
   def initialize(email)
 	@email = email
-	@@tbl_user << email
+	@@tbl_user << self
   end
   
   def show_itself
@@ -37,9 +37,12 @@ class User
 	@@tbl_user.count
   end
 
-  # def self.find_by_email(email_to_find)
-  # 	email_to_find.self
-  # end
+  def self.find_by_email(email)
+    @@tbl_user.each do |user|
+      return user if user.email == email
+    end
+  end
+
 end
 # End of Program's name
 #.............................................................................

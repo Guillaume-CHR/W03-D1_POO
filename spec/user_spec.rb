@@ -30,18 +30,7 @@ describe User do
 		end
 	end
 
-
-
 	describe 'instance methods' do
-
-		# describe 'change_password' do
-		# 	it "changes password to ##ENCRYPTED##" do
-		# 		user = User.new("email@email.com")
-		# 		password = "some string"
-		# 		user.change_password(password)
-		# 		expect(user.password).to eq("##ENCRYPTED##")
-		# 	end
-		# end
 
 		describe 'show_itself' do
 			it "shows itself" do
